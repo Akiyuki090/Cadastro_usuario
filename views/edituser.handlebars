@@ -1,0 +1,15 @@
+<h1>Editar usuário</h1>
+<form class="form" action="/user/updateuser" method="post">
+    <input type="hidden" name="id" value="{{usuario.id}}">
+    <div class="form-control">
+        <label for="name">Nome:</label>
+        <input type="text" name="name" placeholder="Novo nome" value="{{usuario.name}}">
+
+        <label for="cpf">CPF:</label>
+        <input type="text" name="cpf" placeholder="Novo CPF" value="{{usuario.cpf}}">
+
+        <label for="adress">Endereço:</label>
+        <input type="text" name="adress" placeholder="Novo endereço" value="{{usuario.adress}}">
+    </div>
+    <input type="submit" value="Editar">
+</form>
